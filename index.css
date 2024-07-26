@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+
+  background: white;
+  color: black;
+
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+:root {
+  --text2: cyan;
+  --text1: greenyellow;
+  --bg-dark: black;
+  --bg-light: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: var(--text1);
+  }
+
+  html {
+    background: var(--bg);
+  }
+
+}
+
+
+span {
+  background: var(--text1);
+  color: var(--bg-dark);
+  padding: 0.125rem 0.5rem;
+  border-radius: 5px;
+  position: relative;
+
+}
+
+div {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
