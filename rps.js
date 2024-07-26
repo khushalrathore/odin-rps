@@ -1,3 +1,4 @@
+console.log("Refresh the page if you see any errors here...")
 const choices = ['rock', 'paper', 'scissors'];
 let rounds = 5;
 let humanScore = 0;
