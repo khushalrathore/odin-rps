@@ -35,6 +35,7 @@ function playRound() {
 }
 
 while (rounds--) {
+
   playRound();
 }
 
