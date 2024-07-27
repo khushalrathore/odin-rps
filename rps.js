@@ -5,7 +5,7 @@ let humanScore = 0;
 let computerScore = 0;
 
 function getHumanChoice() {
-  let h = prompt("Enter your move (r/p/s) : ").toLowerCase();
+  let h = prompt("Rock, Paper or Scissors?").toLowerCase();
   choices.includes(h) && console.log("You :", h);
   return !choices.includes(h) ? getHumanChoice() : h;
 }
